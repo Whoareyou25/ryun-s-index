@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼태그연습</title>
+</head>
+<body>
+    <h3>로그인</h3>
+    <form action="login.php" method="get" target="_blank">
+    <p>아이디:<input type="text" name="아이디"></p>
+    <p>비밀번호:<input type="password" name="pwd"</p>
+    <p>자기소개:<textarea name="self" id="" cols="20" rows="5"></textarea></p>
+        
+        <p>나라 : <input type="text" list="con" name="national">
+            <datalist id="con">
+            <option value="대한민국"></option>
+            <option value="중국"></option>
+            <option value="미국"></option>
+        </datalist></p>
+
+        <p>가고싶은곳:<input type="con" list="tourlist" name="area">
+            <datalist id="tourlist">
+            <option value="오스트레일리아"></option>
+            <option value="재현장"></option>
+            <option value="혼다유환이"></option>
+            <option value="임지은바보"></option>
+            </datalist>
+        </p>
+        <p>성별 : 여<input type="radio" name="sung" value="girl"> 남<input type="radio" name="sung" value="boy"></p> 
+        <p>취미 : 운동<input type="checkbox">
+            드라이브<input type="checkbox" name="hob" value="운동" checked>
+            등산<input type="checkbox" name="hob" value="등산">
+            헬스<input type="checkbox" name="hob" value="헬스">
+        <input type="color" value="#00BF3F"></p>
+    <p><input type="submit" value="로그인"> <input type="reset" value="취소"><button type="submit">전송</button></p>
+    </form>
+</body>
+</html>
